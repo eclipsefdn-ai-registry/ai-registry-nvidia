@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "scripts": {
+    "validate": "CORE=$(mktemp -d) && git clone --depth 1 https://github.com/eclipsefdn-ai-registry/ai-registry-core.git \"$CORE\" && npm --prefix \"$CORE\" ci --silent && npm run --prefix \"$CORE\" validate-vendor -- \"$PWD\"; CODE=$?; rm -rf \"$CORE\"; exit $CODE",
+    "validate:local": "npm run --prefix ${AI_REGISTRY_CORE_DIR:-../ai-registry-core} validate-vendor -- $PWD"
+  }
+}

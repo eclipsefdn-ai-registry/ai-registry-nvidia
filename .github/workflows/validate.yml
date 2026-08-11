@@ -1,0 +1,46 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout vendor repo
+        uses: actions/checkout@v5
+        with:
+          path: vendor
+
+      - name: Checkout central repo
+        uses: actions/checkout@v5
+        with:
+          repository: eclipsefdn-ai-registry/ai-registry-core
+          ref: main
+          path: core
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      - name: Install core dependencies
+        run: cd core && npm ci
+
+      - name: Validate vendor repo
+        run: cd core && npm run validate-vendor -- ../vendor
+
+      - name: Trigger consolidation
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning::CORE_REGISTRY_DISPATCH_TOKEN not set — skipping consolidation trigger"
+            exit 0
+          fi
+          gh api repos/eclipsefdn-ai-registry/ai-registry-core/actions/workflows/build.yml/dispatches \
+            -f ref=main
+        env:
+          GH_TOKEN: ${{ secrets.CORE_REGISTRY_DISPATCH_TOKEN }}

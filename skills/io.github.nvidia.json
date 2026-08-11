@@ -1,0 +1,8 @@
+{
+  "skillId": "io.github.nvidia",
+  "date": "2026-08-11",
+  "source": {
+    "url": "https://github.com/NVIDIA/skills.git",
+    "path": "skills/*"
+  }
+}
