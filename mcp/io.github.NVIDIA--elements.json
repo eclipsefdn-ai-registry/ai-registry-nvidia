@@ -1,4 +1,9 @@
 {
   "serverId": "io.github.NVIDIA/elements",
-  "date": "2026-08-11"
+  "date": "2026-08-11",
+  "config": {
+    "type": "stdio",
+    "command": "npx",
+    "args": ["-y", "@nvidia-elements/cli", "mcp"]
+  }
 }
