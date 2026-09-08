@@ -2,7 +2,7 @@
   "serverId": "com.nvidia.ngc.nsight.copilot.api/cuda-docs",
   "date": "2026-08-11",
   "config": {
-    "type": "http",
+    "type": "streamable-http",
     "url": "https://api.copilot.nsight.ngc.nvidia.com/mcp/cuda-docs"
   }
 }
