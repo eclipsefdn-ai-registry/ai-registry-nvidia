@@ -1,0 +1,8 @@
+{
+  "skillId": "io.github.nvidia-tensorrt-llm/trtllm-serve-config-guide",
+  "date": "2026-09-18",
+  "source": {
+    "url": "https://github.com/NVIDIA/TensorRT-LLM.git",
+    "path": ".claude/skills/trtllm-serve-config-guide"
+  }
+}

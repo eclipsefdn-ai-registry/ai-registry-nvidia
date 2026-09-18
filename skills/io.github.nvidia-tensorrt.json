@@ -1,0 +1,8 @@
+{
+  "skillId": "io.github.nvidia-tensorrt",
+  "date": "2026-09-18",
+  "source": {
+    "url": "https://github.com/NVIDIA/TensorRT.git",
+    "path": ".agents/skills/*"
+  }
+}

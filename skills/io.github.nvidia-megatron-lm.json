@@ -1,0 +1,8 @@
+{
+  "skillId": "io.github.nvidia-megatron-lm",
+  "date": "2026-09-18",
+  "source": {
+    "url": "https://github.com/NVIDIA/Megatron-LM.git",
+    "path": ["skills/mcore-migrate-gpt-to-hybrid", "skills/mcore-run-on-slurm"]
+  }
+}
