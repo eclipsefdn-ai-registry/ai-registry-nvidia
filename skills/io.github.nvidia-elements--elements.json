@@ -1,0 +1,8 @@
+{
+  "skillId": "io.github.nvidia-elements/elements",
+  "date": "2026-10-02",
+  "source": {
+    "url": "https://github.com/NVIDIA/elements.git",
+    "path": ".agents/skills/elements"
+  }
+}
