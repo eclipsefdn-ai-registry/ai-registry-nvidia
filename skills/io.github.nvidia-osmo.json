@@ -1,0 +1,8 @@
+{
+  "skillId": "io.github.nvidia-osmo",
+  "date": "2026-10-16",
+  "source": {
+    "url": "https://github.com/NVIDIA/OSMO.git",
+    "path": ["skills/osmo-user", "skills/osmo-admin"]
+  }
+}
