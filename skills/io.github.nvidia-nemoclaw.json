@@ -1,8 +1,0 @@
-{
-  "skillId": "io.github.nvidia-nemoclaw",
-  "date": "2026-09-18",
-  "source": {
-    "url": "https://github.com/NVIDIA/NemoClaw.git",
-    "path": [".agents/skills/nemoclaw-user-guide", ".agents/skills/nemoclaw-skills-guide"]
-  }
-}
