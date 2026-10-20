@@ -1,0 +1,17 @@
+{
+  "skillId": "io.github.nvidia-nemo-agent-toolkit",
+  "date": "2026-10-16",
+  "source": {
+    "url": "https://github.com/NVIDIA/NeMo-Agent-Toolkit.git",
+    "path": [
+      "skills/nat-installation",
+      "skills/nat-workflow-creation",
+      "skills/nat-agent-configuration",
+      "skills/nat-tools-and-functions",
+      "skills/nat-evaluation",
+      "skills/nat-optimization",
+      "skills/nat-telemetry",
+      "skills/nat-mcp-and-serving"
+    ]
+  }
+}

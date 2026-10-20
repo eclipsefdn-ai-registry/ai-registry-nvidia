@@ -1,0 +1,14 @@
+{
+  "serverId": "io.github.NVIDIA/kubectl-nv",
+  "date": "2026-10-16",
+  "metadata": {
+    "name": "kubectl-nv",
+    "description": "Read-only MCP server built into NVIDIA's kubectl-nv plugin, exposing its GPU-node diagnostics for Kubernetes clusters (list, info, health, explain, topology, debug, must-gather) as tools over stdio. Requires the kubectl-nv binary on PATH and a kubeconfig."
+  },
+  "selfPublished": true,
+  "config": {
+    "type": "stdio",
+    "command": "kubectl",
+    "args": ["nv", "mcp"]
+  }
+}

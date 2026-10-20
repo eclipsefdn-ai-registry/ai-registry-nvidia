@@ -1,0 +1,8 @@
+{
+  "skillId": "io.github.nvidia-dgx-spark-playbooks",
+  "date": "2026-10-02",
+  "source": {
+    "url": "https://github.com/NVIDIA/dgx-spark-playbooks.git",
+    "path": "nvidia/station-ai-skills/assets/skills/*"
+  }
+}
