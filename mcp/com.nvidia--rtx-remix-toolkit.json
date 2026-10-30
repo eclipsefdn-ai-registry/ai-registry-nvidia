@@ -1,0 +1,14 @@
+{
+  "serverId": "com.nvidia/rtx-remix-toolkit",
+  "date": "2026-10-30",
+  "metadata": {
+    "name": "NVIDIA RTX Remix Toolkit",
+    "description": "Local MCP server built into the NVIDIA RTX Remix Toolkit, which exposes the Toolkit's REST API endpoints as MCP tools so AI agents can work with a running Toolkit. Listens on loopback only."
+  },
+  "selfPublished": true,
+  "config": {
+    "type": "streamable-http",
+    "url": "http://127.0.0.1:18014/mcp/",
+    "notes": "The RTX Remix Toolkit must be running. 18014 is the preferred port; if it is occupied the Toolkit tries ports up to 18019 in order."
+  }
+}

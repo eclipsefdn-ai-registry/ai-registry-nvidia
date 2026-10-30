@@ -1,0 +1,15 @@
+{
+  "serverId": "io.github.NVIDIA/multi-storage-client",
+  "date": "2026-10-30",
+  "metadata": {
+    "name": "Multi-Storage Client",
+    "description": "MCP server built into NVIDIA's Multi-Storage Client (MSC) CLI, exposing tools to list, inspect, upload, download, copy, delete and sync objects and files across the object and file stores configured in the user's MSC configuration."
+  },
+  "selfPublished": true,
+  "config": {
+    "type": "stdio",
+    "command": "msc",
+    "args": ["mcp-server", "start"],
+    "notes": "Requires the msc CLI on PATH from the multi-storage-client Python package installed with the mcp extra plus the extras for each storage backend you use, and an MSC configuration file. Add --config and the path to that file to args to use a specific configuration."
+  }
+}

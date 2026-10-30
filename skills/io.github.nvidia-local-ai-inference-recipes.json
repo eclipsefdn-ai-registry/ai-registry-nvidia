@@ -1,0 +1,8 @@
+{
+  "skillId": "io.github.nvidia-local-ai-inference-recipes",
+  "date": "2026-10-30",
+  "source": {
+    "url": "https://github.com/NVIDIA/local-ai-inference-recipes.git",
+    "path": "skills/find-recipe"
+  }
+}
