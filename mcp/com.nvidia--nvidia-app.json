@@ -1,0 +1,14 @@
+{
+  "serverId": "com.nvidia/nvidia-app",
+  "date": "2026-10-30",
+  "metadata": {
+    "name": "NVIDIA App",
+    "description": "Local MCP server built into the NVIDIA App for Windows (11.0.9.5xx and later): driver status and release notes, installed games and applications, per-game optimization, laptop features, and In-Game Overlay recording, Instant Replay and Highlights. Listens on loopback only."
+  },
+  "selfPublished": true,
+  "config": {
+    "type": "streamable-http",
+    "url": "http://127.0.0.1:13508/mcp",
+    "notes": "Requires NVIDIA App 11.0.9.5xx or later with 'Allow AI agents to control NVIDIA App' enabled under Settings > Features. 13508 is the default port; if it is taken the server falls back to 13509-13518 and then 49152-49161, and the active URL is in %LOCALAPPDATA%\\NVIDIA Corporation\\NvAppMcpServer\\server.json."
+  }
+}

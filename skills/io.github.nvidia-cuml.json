@@ -1,0 +1,8 @@
+{
+  "skillId": "io.github.nvidia-cuml",
+  "date": "2026-10-30",
+  "source": {
+    "url": "https://github.com/NVIDIA/cuml.git",
+    "path": "skills/cuml"
+  }
+}

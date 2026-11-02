@@ -1,8 +1,0 @@
-{
-  "skillId": "io.github.nvidia-nvshmem",
-  "date": "2026-10-02",
-  "source": {
-    "url": "https://github.com/NVIDIA/nvshmem.git",
-    "path": "skills/*"
-  }
-}
