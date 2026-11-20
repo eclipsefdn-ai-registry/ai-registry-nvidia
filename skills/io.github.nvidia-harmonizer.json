@@ -1,0 +1,8 @@
+{
+  "skillId": "io.github.nvidia-harmonizer",
+  "date": "2026-11-20",
+  "source": {
+    "url": "https://github.com/NVIDIA/harmonizer.git",
+    "path": "skills/harmonizer"
+  }
+}

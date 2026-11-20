@@ -1,0 +1,8 @@
+{
+  "skillId": "io.github.nvidia-nurec/asset-harvester",
+  "date": "2026-11-20",
+  "source": {
+    "url": "https://github.com/NVIDIA/asset-harvester.git",
+    "path": "skills/asset-harvester"
+  }
+}

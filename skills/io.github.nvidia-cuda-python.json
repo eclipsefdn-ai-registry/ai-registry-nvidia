@@ -1,0 +1,8 @@
+{
+  "skillId": "io.github.nvidia-cuda-python",
+  "date": "2026-11-20",
+  "source": {
+    "url": "https://github.com/NVIDIA/cuda-python.git",
+    "path": "skills/cuda-python"
+  }
+}
