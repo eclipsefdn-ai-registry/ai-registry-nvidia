@@ -1,0 +1,32 @@
+{
+  "serverId": "com.nvidia/run-ai",
+  "date": "2026-11-20",
+  "metadata": {
+    "name": "NVIDIA Run:ai",
+    "description": "MCP server for NVIDIA Run:ai that lets AI agents inspect workloads, query GPU resource utilization and quotas, and diagnose scheduling issues on a Run:ai cluster. Write tools (submitting workloads, managing node pools and org units) are disabled by default."
+  },
+  "selfPublished": true,
+  "config": {
+    "type": "stdio",
+    "command": "docker",
+    "args": [
+      "run",
+      "--rm",
+      "-i",
+      "-e",
+      "RUNAI_BASE_URL",
+      "-e",
+      "RUNAI_CLIENT_ID",
+      "-e",
+      "RUNAI_CLIENT_SECRET",
+      "nvcr.io/nvidia/runai/runai-mcp-server"
+    ],
+    "env": {
+      "RUNAI_BASE_URL": "${RUNAI_BASE_URL}",
+      "RUNAI_CLIENT_ID": "${RUNAI_CLIENT_ID}",
+      "RUNAI_CLIENT_SECRET": "${RUNAI_CLIENT_SECRET}"
+    },
+    "notes": "Local mode: runs the server in Docker on your own machine against an existing NVIDIA Run:ai cluster (2.25 or later). RUNAI_BASE_URL is the cluster's Run:ai URL; RUNAI_CLIENT_ID and RUNAI_CLIENT_SECRET are Run:ai application credentials used for OAuth2 client-credentials login. Set RUNAI_ALLOW_WRITE_TOOLS=true to enable write tools. A cluster administrator can instead deploy one shared HTTP server, reached at https://<fqdn>/mcp.",
+    "serverKey": "runai"
+  }
+}

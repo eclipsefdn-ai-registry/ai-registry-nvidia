@@ -1,0 +1,8 @@
+{
+  "skillId": "io.github.nvidia-skillevaluator",
+  "date": "2026-11-20",
+  "source": {
+    "url": "https://github.com/NVIDIA/SkillEvaluator.git",
+    "path": "skills/skillevaluator"
+  }
+}

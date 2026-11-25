@@ -1,8 +1,12 @@
 {
   "skillId": "io.github.nvidia-nurec",
-  "date": "2026-08-11",
+  "date": "2026-11-20",
   "source": {
-    "url": "https://github.com/NVIDIA/nurec-skills.git",
-    "path": "skills/*"
+    "url": "https://github.com/NVIDIA/NuRec.git",
+    "path": [
+      "skills/nurec",
+      "skills/physical-ai-datasets",
+      "skills/physical-ai-av-benchmark"
+    ]
   }
 }
